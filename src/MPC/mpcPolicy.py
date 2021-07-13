@@ -28,7 +28,3 @@ def run(env, agent):
     avg_score = np.mean(score_history[-100:])
 
     print('score %.2f' % score, 'trailing 100 games avg %.3f' % avg_score)
-
-
-# if __name__ == '__main__':
-#     run()
