@@ -10,7 +10,7 @@ def run(env, agent):
     # Initialize the MPC policy.
     agent = agent
 
-    n_games = 100
+    n_games = 10000
     
     best_score = env.reward_range[0]
     score_history = []

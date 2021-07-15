@@ -1,20 +1,11 @@
 import numpy as np
 import os, sys
-import torch as T
-import torch.nn as nn
-import torch.nn.functional as F
-import torch.optim as optim
 import gym
 from agent import Agent
 from testEnv import TestEnvironment
 
 
-if __name__ == '__main__':
-    if len(sys.argv) == 2 and str(sys.argv[1]).lower() == 'default':
-        print("environment is default gym_anm ANM6Easy-v0")
-        env = gym.make('gym_anm:ANM6Easy-v0')
-    else: 
-        env = TestEnvironment()
+def trainTD3(env):
     
     agent = Agent(alpha=0.001, beta=0.001, 
                 input_dims=env.observation_space.shape, tau=0.005,

@@ -23,7 +23,7 @@ def run_test(env, model, model_name):
         obs = env.reset()
 
         # run microgrid for 10000 steps
-        for step in range(1000):
+        for step in range(10000):
             action, new_states = model.predict(obs, deterministic=True)
             obs, reward, done, info = env.step(action)
             episode_reward += -reward
@@ -52,8 +52,8 @@ if(not isSACModelAvailable):
     print("SAC Model saved")
     create_model_SAC(env)
 
-sac_model = load_model(SAC, 'sac_gym_anm_model')
-run_test(env, sac_model, 'SAC')
+# sac_model = load_model(SAC, 'sac_gym_anm_model')
+# run_test(env, sac_model, 'SAC')
 
 # PPO model
 if(not isPPOModelAvailable):
@@ -68,5 +68,5 @@ if(not isA2CModelAvailable):
     create_model_A2C(env)
     print("A2C Model saved")
 
-a2c_model = load_model(A2C,'a2c_gym_anm_model')
-run_test(env, a2c_model, 'A2C')
+# a2c_model = load_model(A2C,'a2c_gym_anm_model')
+# run_test(env, a2c_model, 'A2C')
