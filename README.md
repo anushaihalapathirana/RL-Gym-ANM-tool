@@ -8,3 +8,4 @@ AI techniques with Gym-ANM
 * PPO
 * SAC
 * A2C
+* TD3
