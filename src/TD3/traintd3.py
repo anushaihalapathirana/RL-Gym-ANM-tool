@@ -12,7 +12,7 @@ def trainTD3(env):
                 env=env, batch_size=100, layer1_size=400, layer2_size=300,
                 n_actions=env.action_space.shape[0])
    
-    n_games = 100
+    n_games = 10
     
     best_score = env.reward_range[0]
     score_history = []
@@ -20,7 +20,7 @@ def trainTD3(env):
     for i in range(n_games):
         state = env.reset()
         score = 0
-        for j in range(100):
+        for j in range(10000):
             action = agent.choose_action(state)
             new_state, reward, done, info = env.step(action)
             agent.remember(state, action, reward, new_state, done)

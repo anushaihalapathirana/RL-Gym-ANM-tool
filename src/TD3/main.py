@@ -11,4 +11,5 @@ if __name__ == '__main__':
     else: 
         env = TestEnvironment()
     trainTD3(env)
+    print("*******  Training Done  *************")
     testTD3(env)
