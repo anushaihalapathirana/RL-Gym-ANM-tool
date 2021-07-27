@@ -35,6 +35,7 @@ network = {
 }
 
 
+# create new environment
 class SimpleEnvironment(ANMEnv):
 
     def __init__(self):
@@ -69,6 +70,7 @@ class SimpleEnvironment(ANMEnv):
 
 
 if __name__ == '__main__':
+    # use new environment
     env = SimpleEnvironment()
     env.reset()
     agent = MPCAgentConstant(env.simulator, env.action_space, env.gamma, # This policy assumes constant demand and generation during the optimization horizon
