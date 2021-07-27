@@ -15,7 +15,7 @@ A 2-bus power grid with topology:
 """
 
 """
-microgrid topology
+define microgrid topology
 """
 network = {
     'baseMVA': 100,
@@ -56,9 +56,8 @@ class SimpleEnvironment(ANMEnv):
         n_des = self.simulator.N_des                 # number of DES units
         n_gen = self.simulator.N_non_slack_gen       # number of non-slack generators
         N_vars = 2 * n_dev + n_des + n_gen + self.K  # size of state vectors - calculated based on number of devices, gen and storage units - integer
-
-        print(n_dev, n_des, n_gen, N_vars)
-        state = np.random.rand(N_vars) 
+        # N_vars is equals to 11 in this case
+        state = np.random.rand(N_vars)  
 
         return state                                 # random state vector
 
