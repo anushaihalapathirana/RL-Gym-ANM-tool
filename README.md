@@ -32,7 +32,16 @@ AI techniques with Gym-ANM
               
               run main.py file to run all three algorithms at once. train, model save and test
               
+   anmEasy6-test-env.py - How to simply access Gym-ANM6-easy environment
+   
+   customizedEasyenv.py - How to Customize Gym-ANM6 easy environment
+   
+   mpcPolicy-on-anmeasy.py - MPC policy applied on Gym-ANM6-easy environment. 
+                             Run python mpcPolicy-on-anmeasy.py
+                             
               
+   newEnv.py - Run this file to create new Gym-ANM environment
+               
   
 ```
 
