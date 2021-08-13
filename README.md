@@ -41,7 +41,10 @@ AI techniques with Gym-ANM
                              
               
    newEnv.py - Run this file to create new Gym-ANM environment
-               
-  
+
 ```
 
+You can find the full doumentation from below links 
+
+1. https://github.com/anushaihalapathirana/RL-Gym-ANM-tool/blob/master/GymANM-tool.pdf
+2. https://github.com/anushaihalapathirana/RL-Gym-ANM-tool/blob/master/Gym-ANM-tool-Implementation.pdf
